@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>CodexModelSwitcher.SelfTests</AssemblyName>
+    <RootNamespace>CodexModelSwitcher.SelfTests</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\CodexModelSwitcher.Backend\CodexModelSwitcher.Backend.csproj" />
+  </ItemGroup>
+</Project>

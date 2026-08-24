@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodexModelSwitcher.Backend", "src\CodexModelSwitcher.Backend\CodexModelSwitcher.Backend.csproj", "{F36A64B4-A0B4-4F70-8ACB-197C0AAE918B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodexModelSwitcher.Cli", "src\CodexModelSwitcher.Cli\CodexModelSwitcher.Cli.csproj", "{EFCD4720-BBF7-4D2A-A212-C6BFBF0AC073}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodexModelSwitcher.SelfTests", "tests\CodexModelSwitcher.SelfTests\CodexModelSwitcher.SelfTests.csproj", "{2CB7DE0A-EA50-4549-A9F5-2BF462249973}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodexModelSwitcher.CredentialBridge", "src\CodexModelSwitcher.CredentialBridge\CodexModelSwitcher.CredentialBridge.csproj", "{F1F393A8-6220-4E3F-84D1-5BF7BE26C17D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodexModelSwitcher.App", "src\CodexModelSwitcher.App\CodexModelSwitcher.App.csproj", "{B4CC97C4-279D-441D-A276-A94181CA3B28}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F36A64B4-A0B4-4F70-8ACB-197C0AAE918B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F36A64B4-A0B4-4F70-8ACB-197C0AAE918B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F36A64B4-A0B4-4F70-8ACB-197C0AAE918B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F36A64B4-A0B4-4F70-8ACB-197C0AAE918B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFCD4720-BBF7-4D2A-A212-C6BFBF0AC073}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFCD4720-BBF7-4D2A-A212-C6BFBF0AC073}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFCD4720-BBF7-4D2A-A212-C6BFBF0AC073}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFCD4720-BBF7-4D2A-A212-C6BFBF0AC073}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CB7DE0A-EA50-4549-A9F5-2BF462249973}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CB7DE0A-EA50-4549-A9F5-2BF462249973}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CB7DE0A-EA50-4549-A9F5-2BF462249973}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CB7DE0A-EA50-4549-A9F5-2BF462249973}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1F393A8-6220-4E3F-84D1-5BF7BE26C17D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1F393A8-6220-4E3F-84D1-5BF7BE26C17D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1F393A8-6220-4E3F-84D1-5BF7BE26C17D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1F393A8-6220-4E3F-84D1-5BF7BE26C17D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4CC97C4-279D-441D-A276-A94181CA3B28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4CC97C4-279D-441D-A276-A94181CA3B28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4CC97C4-279D-441D-A276-A94181CA3B28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4CC97C4-279D-441D-A276-A94181CA3B28}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

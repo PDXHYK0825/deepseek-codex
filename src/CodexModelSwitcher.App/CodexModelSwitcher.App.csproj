@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>CodexModelSwitcher</AssemblyName>
+    <RootNamespace>CodexModelSwitcher.App</RootNamespace>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CodexModelSwitcher.Backend\CodexModelSwitcher.Backend.csproj" />
+  </ItemGroup>
+  <Target Name="BuildCredentialBridge" BeforeTargets="Build">
+    <MSBuild Projects="..\CodexModelSwitcher.CredentialBridge\CodexModelSwitcher.CredentialBridge.csproj"
+             Targets="Build"
+             Properties="Configuration=$(Configuration)"
+             BuildInParallel="false" />
+  </Target>
+  <Target Name="CopyCredentialBridge" AfterTargets="Build">
+    <ItemGroup>
+      <CredentialBridgeFiles Include="..\CodexModelSwitcher.CredentialBridge\bin\$(Configuration)\net8.0\codex-model-switcher-credential.*" />
+    </ItemGroup>
+    <Copy SourceFiles="@(CredentialBridgeFiles)" DestinationFolder="$(OutDir)" SkipUnchangedFiles="true" />
+  </Target>
+</Project>

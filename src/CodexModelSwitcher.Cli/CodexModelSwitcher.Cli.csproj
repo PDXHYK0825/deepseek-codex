@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>codex-model-switcher</AssemblyName>
+    <RootNamespace>CodexModelSwitcher.Cli</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CodexModelSwitcher.Backend\CodexModelSwitcher.Backend.csproj" />
+  </ItemGroup>
+</Project>

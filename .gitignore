@@ -1,0 +1,20 @@
+[Bb]in/
+[Oo]bj/
+.vs/
+.vscode/
+.idea/
+.tools/
+.tmp/
+TestResults/
+artifacts/
+
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.nupkg
+*.snupkg
+
+# Local logs and temporary files
+*.log
+*.tmp

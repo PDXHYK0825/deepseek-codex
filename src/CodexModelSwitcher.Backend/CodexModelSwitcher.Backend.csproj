@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>CodexModelSwitcher.Backend</AssemblyName>
+    <RootNamespace>CodexModelSwitcher</RootNamespace>
+  </PropertyGroup>
+</Project>

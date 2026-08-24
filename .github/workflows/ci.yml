@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-test:
+    runs-on: windows-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up .NET 8
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Restore
+        run: dotnet restore CodexModelSwitcher.sln
+
+      - name: Build
+        run: dotnet build CodexModelSwitcher.sln --configuration Release --no-restore
+
+      - name: Run self-tests
+        run: dotnet run --project tests/CodexModelSwitcher.SelfTests --configuration Release --no-build

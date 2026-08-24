@@ -1,0 +1,18 @@
+* text=auto
+.gitattributes text eol=lf
+.gitignore text eol=lf
+
+# Windows build and source files
+*.cs text eol=crlf
+*.csproj text eol=crlf
+*.props text eol=crlf
+*.sln text eol=crlf
+*.xaml text eol=crlf
+*.ps1 text eol=crlf
+
+# Repository and automation files
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
+*.toml text eol=lf
