@@ -127,6 +127,8 @@ runtime\
 
 主程序直接位于项目根目录，便于双击启动。`runtime/` 中的安全凭据组件必须与主程序一起保留。根目录程序、`runtime/`、`artifacts/`、`bin/` 和 `obj/` 都是可复现产物，不提交到 Git。
 
+不想安装 SDK 或运行时，可从 [GitHub v0.1.1 Release](https://github.com/PDXHYK0825/deepseek-codex/releases/tag/v0.1.1) 下载 Windows x64 自包含压缩包，解压后直接双击根目录的 `CodexModelSwitcher.exe`。
+
 如需生成包含运行时的独立版本：
 
 ```powershell
