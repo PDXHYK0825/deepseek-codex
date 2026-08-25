@@ -7,6 +7,8 @@
 .tmp/
 TestResults/
 artifacts/
+/CodexModelSwitcher.exe
+/runtime/
 
 *.user
 *.suo

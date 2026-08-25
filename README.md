@@ -120,12 +120,12 @@ API Key 不支持命令行参数传入。首次切换会出现隐藏输入框，
 发布结果位于：
 
 ```text
-artifacts\app\win-x64\
-  CodexModelSwitcher.exe
+CodexModelSwitcher.exe              双击启动
+runtime\
   codex-model-switcher-credential.exe
 ```
 
-目录中同时生成用于调试的 PDB 文件。`artifacts/`、`bin/` 和 `obj/` 都是可复现产物，不提交到 Git。
+主程序直接位于项目根目录，便于双击启动。`runtime/` 中的安全凭据组件必须与主程序一起保留。根目录程序、`runtime/`、`artifacts/`、`bin/` 和 `obj/` 都是可复现产物，不提交到 Git。
 
 如需生成包含运行时的独立版本：
 

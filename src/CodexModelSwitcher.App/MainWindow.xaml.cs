@@ -318,10 +318,15 @@ public partial class MainWindow : Window
 
     private static string ResolveCredentialBridgePath()
     {
-        var path = Path.Combine(AppContext.BaseDirectory, "codex-model-switcher-credential.exe");
-        if (!File.Exists(path))
+        var candidates = new[]
         {
-            throw new SwitcherException("credential_bridge_missing", "The credential bridge is missing from the application directory.");
+            Path.Combine(AppContext.BaseDirectory, "runtime", "codex-model-switcher-credential.exe"),
+            Path.Combine(AppContext.BaseDirectory, "codex-model-switcher-credential.exe")
+        };
+        var path = candidates.FirstOrDefault(File.Exists);
+        if (path is null)
+        {
+            throw new SwitcherException("credential_bridge_missing", "The credential bridge is missing from the application runtime directory.");
         }
 
         return path;
